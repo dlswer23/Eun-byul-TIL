@@ -1,0 +1,192 @@
+함수 선언하기
+
+Typedef int Data;
+
+Typedef Struct _ArrayStack{
+
+	Data ArrayStack[STACK_LEN];
+	int TopIndex;
+} ArrayStack
+
+Typedef ArrayStack stack
+
+
+ 
+초기화
+
+void StackInit(stack *pstack){
+	
+pstack->TopIndex = -1;
+
+}
+
+비어 있는지 확인
+
+int IsEmpty(stack *pstack){
+
+If(pstack -> topIndex == -1)
+
+	return True;
+
+else 
+	return False;
+}
+
+삽입
+
+void SPush(stack*pstack, Data data){
+
+pstack-> TopIndex += 1; // top인덱스에 1을 삽입 
+pstack-> stackArr[pstack -> topindex] = data;
+
+
+
+
+
+
+삭제
+
+
+Data sPop(stack*pstack, Data data){
+
+int Ridx;
+
+if(IsEmpty(stack)){
+
+printf("빈 값입니다");
+
+return (-1);
+
+else 
+
+Ridx = pstack -> topIndex;
+Pstack =-> topindex -= 1;
+
+return pstack -> stackArr[Ridx];
+
+}
+
+
+
+
+
+
+
+
+
+
+
+맨 처음 선업
+
+typedef int data;
+ 
+typedef Stack_ArrStack{
+
+Data stackArr[STACK_LEN] == 배열을 선언해 주어야 함
+int topIndex;
+
+} ArrStack
+
+return ArrStack stack;
+
+
+초기화 진행 
+
+void stack_SiackInit(Stack*pstack){
+	
+	pstack-> topindex == -1;
+
+}
+
+
+삭제 할때
+
+Data Spop (Stack *pstack){
+
+Int Ridx;
+
+If(SIsEmpty(Stack)){
+
+printf("빈 스택 입니다 ");
+return (-1);
+
+else 
+
+
+Ridx =pstack-> topIndex;
+pstack-> topIndex =-= -1;
+
+
+
+
+return 
+
+
+
+
+
+원형 큐
+
+Ttpedef struct ArrStack{
+
+int Topindex;
+Data ArrStack[Stack_LEN]
+
+}
+
+
+
+
+
+
+
+typedef int Data;
+
+typedef struct _CQueue{
+
+int front;
+int rear;
+Data CQueueArr[Que_LeN}
+
+} CQueue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+맨 
+
+
+
+
+
+
+
+
+
+
+
+
