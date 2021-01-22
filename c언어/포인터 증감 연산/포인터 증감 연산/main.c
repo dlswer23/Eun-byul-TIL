@@ -10,7 +10,18 @@
 int main(void){
     int arrayNumber[3]={10,20,30};
     
-    printf("첫번째 원소의 값 : %d \n", arrayNumber[0]);
+    int i;
+    
+    for( i=0;i<3;i++){
+        printf("%d \n", *(arrayNumber+i));
+        //arrayNumber[i] == *arrayNumber
+        
+    }
+    
+    return 0;
+    
+    
+    /*printf("첫번째 원소의 값 : %d \n", arrayNumber[0]);
     printf("두번째 원소의 주소 : %d \n", arrayNumber[1]);
     printf("세번째 원소의 주소 값: %d \n", arrayNumber[2]);
     
@@ -50,7 +61,7 @@ int main(void){
     str1 = "suhyun"; //문자열 값을 한번에 초기화 시켜줄 수 있다.
     
     char str2[100]="";
-    str2[0] = 's'; //scanf를 통해서 정상적으로 값을 입력 받을 수 있다.
+    str2[0] = 's'; //scanf를 통해서 정상적으로 값을 입력 받을 수 있다.*/
     
     
     
