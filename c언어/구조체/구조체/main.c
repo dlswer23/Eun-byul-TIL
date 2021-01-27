@@ -15,6 +15,42 @@ struct Position20{
 };
 
 
+int main(void){
+    struct Position20 point1 = {1,2};
+    struct Position20 point2 ={100,200};
+    
+    struct Position20* ptrPoint = &point1;
+    
+    (*ptrPoint).positionX = 4;
+    (*ptrPoint).positionY = 5;
+    printf("[%d %d] \n", ptrPoint->positionX, ptrPoint->positionY);
+    
+    ptrPoint = &point2;
+    ptrPoint->positionX = 105;
+    ptrPoint->positionY = 210;
+    printf("[%d %d] \n", ptrPoint->positionX,ptrPoint->positionY);
+    
+    return 0;
+}
+
+
+/*int main(void){
+    struct Position20 poinTri[3];
+    
+    int i;
+    
+    for(i=0;i<3;i++){
+        printf("정의 x좌표와 y좌표 입력: ");
+        scanf("%d %d", &poinTri[i].positionX, &poinTri[i].positionY);
+    }
+    
+    for(i =0;i<3;i++){
+    printf(("%d %d)",poinTri[i].positionX,&poinTri[i].positionY);
+        
+    }
+               printf("\n");
+        
+               return 0;
 
 
 int main(void){
@@ -37,9 +73,20 @@ int main(void){
     
     return 0;
     
+struct P2 getCenter()
+{
+    struct P2 center;
+    center.x = 2.0;
+    center.y = 3.0;
+    return center;
+};
+
+int main(int argc, const char *argv[]){
+    struct P2 pointCenter = getCenter();
+    printf("%f \n",pointCenter);
+    return 0;*/
     
     
- 
+
     
-    
-}
+
