@@ -91,6 +91,6 @@ int main(int argc, const char *argv[]){
         printf("\n%d's Student \n",(i+1));
         printf("Sum: %d \n",s[i].total);
     }
-               return 0;
+    return 0;
     
 }
